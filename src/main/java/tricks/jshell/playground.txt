@@ -1,0 +1,28 @@
+# Jshell
+
+Jshell is available after Java 9.
+
+```shell
+jshell
+jshell> int i = 10
+jshell> System.out.println(i)
+# To start up jshell with all printing in it. then you can use println, printf commands directly available.
+jshell --startup DEFAULT PRINTING
+jshell> println("Hello world")
+jshell> /methods
+jshell> /edit print
+jshell> /?
+jshell> /list -all // all commands in jshell
+jshell> /list -start // what was it started with
+```
+
+vi hello.jsh
+```java
+System.out.println("Hello world");
+/exit
+```
+
+```shell
+jshell --startup hello.jsh
+Hello world
+```
